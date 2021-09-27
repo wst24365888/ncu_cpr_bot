@@ -1,0 +1,12 @@
+[DATA]
+name = 
+email = 
+student_id = 
+department = 
+student_class = 
+phone = 
+
+[BOT]
+url = https://health.ncu.edu.tw:3001/
+headless = False
+interval = 10
