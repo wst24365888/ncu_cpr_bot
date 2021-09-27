@@ -12,4 +12,4 @@ This is a bot used to sign up for a CPR event in NCU.
 
 3. Configure fields in `config.ini`.
 
-4. Run `start.bat`.
+4. Run `run.bat`.
