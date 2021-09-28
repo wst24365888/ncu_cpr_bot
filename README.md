@@ -13,11 +13,11 @@ This is a bot used to sign up for a CPR event in NCU.
 1. Clone /
    [Download this repo](https://github.com/wst24365888/ncu_cpr_bot/archive/refs/heads/main.zip).
 
-2. Run `setup.cmd`.
+2. Double click to run `setup.cmd`.
 
 3. Configure fields in `config.ini`.
 
-4. Run `run.cmd`.
+4. Double click to run `run.cmd`.
 
 ### For macOS
 
@@ -26,11 +26,11 @@ This is a bot used to sign up for a CPR event in NCU.
 1. Clone /
    [Download this repo](https://github.com/wst24365888/ncu_cpr_bot/archive/refs/heads/main.zip).
 
-2. Run `setup.command`.
+2. Double click to run `setup.command`.
 
 3. Configure fields in `config.ini`.
 
-4. Run `run.command`.
+4. Double click to run `run.command`.
 
 ### For Linux
 
