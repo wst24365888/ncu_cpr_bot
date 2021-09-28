@@ -8,5 +8,4 @@ phone =
 
 [BOT]
 url = https://health.ncu.edu.tw:3001/
-headless = False
 interval = 10
