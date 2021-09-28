@@ -85,41 +85,9 @@ class NcuCprCrawler:
         print(
             f"{datetime.datetime.now()} - available_events: {len(available_events)} with option: {available_events[0]}")
 
-        # if len(available_events) <= 1 and available_events[0] == "":
-        #     driver.quit()
-        # else:
-        #     name = WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#name")))
-        #     name.send_keys(self.config['DATA']['name'])
-
-        #     email = WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#email")))
-        #     email.send_keys(self.config['DATA']['email'])
-
-        #     student_id = WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#ID")))
-        #     student_id.send_keys(self.config['DATA']['student_id'])
-
-        #     department = WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#department")))
-        #     department.send_keys(self.config['DATA']['department'])
-
-        #     student_class = WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#class")))
-        #     student_class.send_keys(self.config['DATA']['student_class'])
-
-        #     phone = WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#phone")))
-        #     phone.send_keys(self.config['DATA']['phone'])
-
-        #     available_events_selector = Select(WebDriverWait(driver, 1).until(
-        #         EC.element_to_be_clickable((By.CSS_SELECTOR, "#event"))))
-        #     available_events_selector.select_by_index(0)
-
-        #     submit = WebDriverWait(driver, 1).until(EC.element_to_be_clickable(
-        #         (By.CSS_SELECTOR, "body > div:nth-child(2) > div.col-xs-5.container.well > form > button")))
-        #     submit.click()
-        if True:
+        if len(available_events) <= 1 and available_events[0] == "":
+            driver.quit()
+        else:
             name = WebDriverWait(driver, 1).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "#name")))
             name.send_keys(self.config['DATA']['name'])
@@ -143,6 +111,14 @@ class NcuCprCrawler:
             phone = WebDriverWait(driver, 1).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "#phone")))
             phone.send_keys(self.config['DATA']['phone'])
+
+            available_events_selector = Select(WebDriverWait(driver, 1).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "#event"))))
+            available_events_selector.select_by_index(0)
+
+            submit = WebDriverWait(driver, 1).until(EC.element_to_be_clickable(
+                (By.CSS_SELECTOR, "body > div:nth-child(2) > div.col-xs-5.container.well > form > button")))
+            submit.click()
 
             self.screenshot(driver)
 
