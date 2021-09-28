@@ -1,4 +1,2 @@
-pip install selenium
-pip install chromedriver-autoinstaller
-pip install configparser
+pip install -r requirements.txt
 cp config.ini.example config.ini
