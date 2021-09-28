@@ -65,7 +65,7 @@ class NcuCprCrawler:
 
         def S(X): return driver.execute_script(
             'return document.body.parentNode.scroll'+X)
-        
+
         driver.set_window_size(S('Width'), S('Height'))
         driver.save_screenshot(file_path + f'result-{int(time.time())}.png')
 
